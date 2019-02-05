@@ -1,19 +1,18 @@
 public class CaballeroDeBronce extends Personaje{
-	private int poderEspecial;
+	private Habilidad[] habilidades;
 	private Objeto[] mochila;
 
 	public CaballeroDeBronce(String nombre,int hp,int energia, int ataque,int defensa,int poderEspecial){
 		super(nombre,hp,energia,ataque,defensa);
 		mochila= new Objeto[3];
-		this.poderEspecial= poderEspecial;
 	}
 
-	public void setPoderEspecial(int poderEspecial){
-		this.poderEspecial=poderEspecial;
+	public Habilidad[] getHabilidades(){
+		return habilidades;
 	}
 
-	public int getPoderEspecial(){
-		return poderEspecial;
+	public void setHabilidades(Habilidad[] habilidades){
+		this.habilidades=habilidades;
 	}
 
 	public Objeto[] getMochila(){
@@ -42,7 +41,18 @@ public class CaballeroDeBronce extends Personaje{
 		resultado= resultado+"]";
 		return resultado;
 	}
+	public String imprimeHabilidades(){
+		String resultado="Habilidades: [";
+		for(int i=0;i<habilidades.length;i++){
 
+			resultado= resultado+" Habilidad: "
+				+habilidades[i].getNombre()
+				+" puntos: "+ habilidades[i].getPuntosEspeciales()+",";				
+
+		}
+		resultado= resultado+"]";
+		return resultado;
+	}
 
 
 

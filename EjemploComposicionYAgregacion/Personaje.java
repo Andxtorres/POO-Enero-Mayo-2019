@@ -6,7 +6,6 @@ public class Personaje{
 	private int energia;
 	private int ataque;
 	private int defensa;
-
 	public Personaje(String nombre, int hp,int energia,int ataque,int defensa){
 		this.nombre=nombre;
 		this.hp=hp;

@@ -1,6 +1,7 @@
 public class Main{
 	public static void main(String args[]){
-		CaballeroDeBronce cb= new CaballeroDeBronce("Seiya",100,100,15,4,20);
+
+		Shaun cb= new Shaun();
 		CaballeroDeOro co= new CaballeroDeOro("Mascara de la muerte",50,200,5,3);
 		Objeto o= new Objeto("Espada",100);
 		Objeto o1= new Objeto("Escudo",100);
@@ -13,5 +14,6 @@ public class Main{
 		System.out.println(cb.toString());
 		System.out.println(co.toString());
 		System.out.println(cb.imprimeInventario());
+		System.out.println(cb.imprimeHabilidades());
 	}
 }
