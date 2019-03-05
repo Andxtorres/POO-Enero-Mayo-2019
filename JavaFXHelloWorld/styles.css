@@ -1,0 +1,22 @@
+.redButton{
+	-fx-background-color: red;
+	-fx-text-fill:white;
+}
+.redButton:hover{
+	-fx-background-color: green;
+}
+.redButton:pressed{
+	-fx-background-color: blue;
+	-fx-text-fill:white;
+}
+.label1{
+	-fx-text-fill:purple;
+}
+.toggleButton{
+	-fx-border-radius:0px;
+}
+
+.toggleButton:selected{
+	-fx-background-color: blue;
+	-fx-text-fill:white;
+}
