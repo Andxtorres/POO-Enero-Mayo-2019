@@ -7,7 +7,7 @@ import javafx.scene.control.*;
 
 public class Main extends Application{
 	public static void main(String[] args){
-		Application.launch(args);
+		launch(args);
 	}
 	public void start(Stage stage){
 		stage.initStyle(StageStyle.DECORATED);
